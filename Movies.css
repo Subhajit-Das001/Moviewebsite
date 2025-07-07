@@ -1,0 +1,36 @@
+.movie-gallery {
+  padding-left: 50px;
+  padding-top: 20px;
+  background: #111;
+  color: #fff;
+  min-height: 100vh;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.movie-card {
+  background: #1e1e1e;
+  border-radius: 10px;
+  padding: 5px;
+  width: 200px;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-poster {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+

@@ -1,0 +1,112 @@
+body{
+  margin:0;
+}
+.Navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111;
+  padding-left: 75px;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  
+  justify-items: center;
+  
+}
+.link{
+  text-decoration: none;
+  font-size: 20px;
+}
+.imgg{
+  height:50px;
+  width:50px;
+  border-radius: 50%;
+  padding:10px;
+}
+.profile-text-containter{
+  display: flex;
+  flex-wrap: wrap;
+  color: blue;
+}
+.profile-text{
+  font-size: 20px;
+  padding-top: 18px;
+}
+.icon-sort{
+  padding-top: 22px;
+  padding-left:5px;
+}
+.sidebar {
+  width: 50px;
+  height: 100%;
+  background-color: rgb(16, 15, 15);
+  position: fixed;
+  top:0;
+ display:flex;
+  flex-direction: column;
+  justify-content:right;
+
+}
+.sidebar-icon{
+    color: white;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    margin-left: 15px;
+}
+
+.feature-container{
+  height:400px;
+  width:100%;
+  background-color: #731f1f;
+  background-image:  url("https://images.bauerhosting.com/legacy/empire-tmdb/films/216015/images/zw3fM9KYYhYGsIQUJOyQNbeZSnn.jpg?ar=16%3A9&fit=crop&crop=top&auto=format&w=undefined&q=80");
+  background-size: cover;
+   background-position: center;
+   display: flex;
+  align-items:end;
+  justify-content:right;
+  padding: 20px;
+  box-sizing: border-box;
+  color:white;
+
+
+
+}
+.para{
+  padding-left: 60px;
+    width: 100%;
+  padding-left: 60px;
+  display: -webkit-box;
+  -webkit-line-clamp: 12;           /* number of lines before truncating */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.movie-title{
+  padding-left:29px;
+  font-size: 20px;
+
+}
+
+@media (max-width: 532px) {
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    align-items:flex-start;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items:center;
+  }
+  .featured_img{
+    width: 100%;
+  }
+}
+
+
+
