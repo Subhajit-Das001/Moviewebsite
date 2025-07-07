@@ -24,11 +24,11 @@ const MovieDetail = () => {
     fetchMovie();
   }, [id]);
 
-  if (!movie) return <p style={{ color: 'red' }}>Movie not found</p>;
+  if (!movie) return <p style={{ color: 'red',paddingLeft:'50px' }}>Movie not found</p>;
 
   return (
     <div style={{ color: 'white', background: '#111', padding: '20px' }}>
-      <h1>{movie.title}</h1>
+      <h1>{movie.original_title}</h1>
       <img src={movie.poster_path} alt={movie.original_title} style={{ width: '300px' }} />
       <p>{movie.overview}</p>
     </div>
